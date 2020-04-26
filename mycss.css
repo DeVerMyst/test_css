@@ -1,0 +1,112 @@
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+.hor{
+    display:flex;
+    flex-direction:row;
+    color:white;
+}
+
+.vert{
+    display:flex;
+    flex-direction:column;
+}
+
+#foot{
+    background-color: gray;
+}
+
+#tennis{
+    background-color: yellow;
+}
+
+#F1{
+    background-color: blue;
+}
+
+#rugby{
+    background-color: red;
+}
+
+#natation{
+    background-color: green;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: rgba(255, 0, 0, .5);
+  }
+  .two { 
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    background-color: rgba(0, 255, 0, .5);
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    background-color: rgba(0, 0, 255, .5);
+  }
+  .four {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: rgba(249, 249, 26, .5);
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 4;
+    background-color:rgba(249, 0, 26, .5);
+  }
+  .six {
+    grid-column: 3;
+    grid-row: 4;
+    background-color: rgba(0, 249, 0, .5);
+  }
+
+
+.hor2{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap-reverse;
+}
+
+  #brick{
+      min-width: 50px;
+      min-height: 50px;
+      color:black;
+      
+  }
+
+  .hor3{
+    display:flex;
+    flex-flow:row wrap;
+    /* width:100%; */
+    height :600px;
+    margin:auto;
+    /* flex-flow:row-reverse wrap; */
+}
+
+.hor-orga{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap-reverse;
+    /* justify-content:space-around; */
+    justify-content:center;
+    /* align-content : center ; */
+    align-items : stretch ;
+    align-content : space-around ;
+}
